@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaDrive Lux | Catalogue</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">NovaDrive <span>Lux</span></h1>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="./content/auth.html">authentification</a></li>
+                <li><a href="./content/a-propos.html">a-propos</a></li>
+                <li><a href="./content/contact.html">Contactez-nous</a></li>
+                <li><div id="user-menu" class="user-menu"></div></li>
+                <li id="profil">profil</li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>L'Excellence Automobile</h2>
+            <p>Découvrez notre collection de véhicules d'exception.</p>
+        </div>
+        <div id="profile-sidebar">
+            <button id="close-sidebar">X</button>
+            <div id="user-info"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="filtres-container">
+            <button class="btn-filtre actif" data-categorie="Toutes">Toutes</button>
+            <button class="btn-filtre" data-categorie="Électrique">Électrique</button>
+            <button class="btn-filtre" data-categorie="Sportive">Sportive</button>
+            <button class="btn-filtre" data-categorie="Luxe">Luxe</button>
+            <button class="btn-filtre" data-categorie="SUV">SUV</button>
+        </section>
+        <section class="catalogue-grid" id="catalogue"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaDrive Lux. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./javascript/data.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/auth.js"></script>
+    <script src="./javascript/showroom.js"></script>
+</body>
+</html>
