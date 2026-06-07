@@ -40,8 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!estConnecte || estConnecte !== 'true') {
             alert("Vous devez être connecté pour réserver un véhicule.");
             window.location.href = "auth.html"; 
+        else {
             const acompte = voiture.prix * 0.10;
             alert(`Réservation confirmée ! Un acompte de ${acompte.toLocaleString('fr-DZ')} DZD sera prélevé.`);
+        } 
         }
     };
 });
+
+
+
+
+
+
